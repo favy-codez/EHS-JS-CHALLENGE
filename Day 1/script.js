@@ -1,6 +1,6 @@
 /*
 Challenge 1A
-create an arrow function named ehc that accepts a single argument beneficiary and returns a greeting string: Hello, {beneficiary}!
+create an arrow function named ehc that accepts a single argument beneficiary and returns a greeting string: Hello, {beneficiary}! export the greet function as default
 */
 
 const ehc = (beneficiary) => {
@@ -10,3 +10,5 @@ const ehc = (beneficiary) => {
 }
 
 ehc()
+
+export default ehc;

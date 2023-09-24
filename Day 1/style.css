@@ -1,0 +1,14 @@
+.container {
+    text-align: center;
+    margin: 50px;
+}
+
+.error-msg {
+    color: red;
+    display: none;
+}
+
+.success-msg {
+    color: green;
+    display: none;
+}

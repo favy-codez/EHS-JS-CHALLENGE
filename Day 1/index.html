@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>EHS JS CHALLENGE</title>
 </head>
 <body>
-
+    <div class="container">
+        
     <h1>Here is the second challenge</h1>
-
-<!-- 
-INSTRUCTION
-You will create a form with an input field for users to enter their name and a submit button. The objective is to practice DOM manipulation by validating the user's input and displaying error messages or success messages accordingly.
- -->
-
-
-<form action="">
-    <input type="text" name="" placeholder="Enter your name" id="nameInput">
-    <input type="submit" value="" id="submitBtn">
-</form>
-
-
-
+    <!-- 
+    INSTRUCTION
+    You will create a form with an input field for users to enter their name and a submit button. The objective is to practice DOM manipulation by validating the user's input and displaying error messages or success messages accordingly.
+     -->
+    
+    <form action="">
+        <input type="text" name="" placeholder="Enter your name" id="nameInput">
+        <input type="submit" value="" id="submitBtn">
+        <div id="errorMsg" class="error-msg">Please enter your name</div>
+        <div id="successMsg" class="success-msg">Success! Your name has been submitted.</div>
+    </form>
+    
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

@@ -38,3 +38,25 @@ Display the success message when the input field is not empty, and the submit bu
 */
 let name = document.getElementById("nameInput");
 let btn = document.getElementById("submitBtn");
+const errorMsg = document.getElementById('errorMsg');
+const successMsg = document.getElementById('successMsg');
+
+
+
+// Add a click event listener to the submit button
+submitBtn.addEventListener('click', function() {
+    const enteredName = nameInput.value.trim(); // Remove leading/trailing spaces
+
+    if (enteredName === '') {
+        errorMsg.style.display = 'block';
+        successMsg.style.display = 'none';
+    } else {
+        errorMsg.style.display = 'none';
+        successMsg.style.display = 'block';
+    }
+});
+
+// Add an input event listener to the name input field
+nameInput.addEventListener('input', function() {
+    errorMsg.style.display = 'none';
+});

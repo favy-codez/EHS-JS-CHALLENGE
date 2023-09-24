@@ -9,9 +9,9 @@ const ehc = (beneficiary) => {
     console.log(`Hello, ${beneficiary}`);
 }
 
-ehc()
+// ehc()
 
-export default ehc;
+// export default ehc;
 
 // CHALLENGE TWO
 /*
@@ -44,7 +44,7 @@ const successMsg = document.getElementById('successMsg');
 
 
 // Add a click event listener to the submit button
-submitBtn.addEventListener('click', function() {
+btn.addEventListener('click', function() {
     const enteredName = nameInput.value.trim(); // Remove leading/trailing spaces
 
     if (enteredName === '') {
@@ -57,6 +57,6 @@ submitBtn.addEventListener('click', function() {
 });
 
 // Add an input event listener to the name input field
-nameInput.addEventListener('input', function() {
+name.addEventListener('input', function() {
     errorMsg.style.display = 'none';
 });

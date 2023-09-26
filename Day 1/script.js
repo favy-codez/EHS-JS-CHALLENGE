@@ -41,12 +41,15 @@ let btn = document.getElementById("submitBtn");
 const errorMsg = document.getElementById('errorMsg');
 const successMsg = document.getElementById('successMsg');
 
-
+// Add an input event listener to the name input field
+name.addEventListener('input', function() {
+    errorMsg.style.display = 'none';
+});
 
 // Add a click event listener to the submit button
 btn.addEventListener('click', function() {
-    const enteredName = nameInput.value.trim(); // Remove leading/trailing spaces
-
+     // Remove leading/trailing spaces
+     const enteredName = name.value.trim();
     if (enteredName === '') {
         errorMsg.style.display = 'block';
         successMsg.style.display = 'none';
@@ -56,7 +59,3 @@ btn.addEventListener('click', function() {
     }
 });
 
-// Add an input event listener to the name input field
-name.addEventListener('input', function() {
-    errorMsg.style.display = 'none';
-});

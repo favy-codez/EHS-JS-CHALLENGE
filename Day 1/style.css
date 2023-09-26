@@ -8,7 +8,7 @@
     display: none;
 }
 
-.success-msg {
+#successMsg {
     color: green;
     display: none;
 }
